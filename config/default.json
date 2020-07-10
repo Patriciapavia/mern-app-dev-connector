@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://patricia:Tar7727341@mernconnector.qlwfc.mongodb.net/<dbname>?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://patricia:Tar7727341@mernconnector.qlwfc.mongodb.net/<dbname>?retryWrites=true&w=majority",
+  "jwtSecret": "mysecrettoken"
 }

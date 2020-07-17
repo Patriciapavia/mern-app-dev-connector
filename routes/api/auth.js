@@ -8,7 +8,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 
 // @route GET api/auth
-// @desc Test route
+//
 // @access Plublic
 router.get("/", auth, async (req, res) => {
   try {
@@ -53,11 +53,9 @@ router.post(
       // user.password is what we get from database
 
       if (!isMatch) {
-        return res
-          .status(400)
-          .json({
-            errors: [{ mgs: "invalid Credentials / Invalid password" }],
-          }); // bad request
+        return res.status(400).json({
+          errors: [{ mgs: "invalid Credentials / Invalid password" }],
+        }); // bad request
       }
 
       const payload = {
